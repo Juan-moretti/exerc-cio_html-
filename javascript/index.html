@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Validação com JavaScript</title>
+  <style>
+    .mensagem {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .sucesso {
+      color: green;
+    }
+    .erro {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulário com Validação</h2>
+
+  <form id="meuFormulario">
+    <label for="campoA">Campo A:</label>
+    <input type="number" id="campoA" required><br><br>
+
+    <label for="campoB">Campo B:</label>
+    <input type="number" id="campoB" required><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensagem" class="mensagem"></div>
+
+  <script src="validacao.js"></script> <!-- Arquivo JS externo -->
+</body>
+</html>
